@@ -30,3 +30,23 @@ resources = {
     "coffee": 100,
 }
 
+choice = input("What would you like? (espresso/latte/cappuccino): ")
+choice = choice.lower()
+
+print("Please insert Coins")
+quarters = input("How many Quarters? :")
+dimes = input("How many dimes? :")
+nickels = input("How many nickels? :")
+pennies = input("How many pennies? :")
+
+money = (quarters*0.25)+(dimes*0.1)+(nickels*0.05)+(pennies*0.01)
+if choice == "report":
+    print (resources)
+elif choice == "espresso":
+    if(money<1.5):
+        print("Sorry! not enough Money has been inserted")
+
+
+
+
+
